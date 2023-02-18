@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang = "en">
+  <head>
+    <title>Wordle</title>
+    <meta charset="UTF-8">
+
+    <link rel = "stylesheet" href = "style.css"/>
+    <script src="wordle.js"></script>
+  </head> 
+  <body>
+    <header class="AppHeader">
+      <div id="title">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Wordle</div>
+      <div id="icons">
+        <button type="button" class = "side" id="instruction" aria-label="Instructions">&#9432; </button>
+        <button type="button" class = "side" id="hint" aria-label="Hint">&#63;</button>
+        <button type="button" class = "side" id="dark" aria-label="Dark Mode">&#9681;</button>
+      </div>
+    <br></header>
+
+    <div class="section">
+      <div class = "gridSection">
+      <div id="grid" ></div><br>
+      <div id="congrats" style = "display:none;"> 
+        <image src="https://res.cloudinary.com/mkf/image/upload/v1675467141/ENSF-381/labs/congrats_fkscna.gif"></div><br>
+      <div><button type="button" id="restart">Start Over</button></div></div>
+
+      <div style="display:none;" class = "instructSection" id="instructions-message">
+        <h3>&emsp;&emsp;&nbsp;How to Play</h3>
+        <ul style="list-style-type:circle">
+          <li>Start typing. The letters will appear in the boxes</li>
+          <li>Remove letters with Backspace</li>
+          <li>Hit Enter/Return to submit an answer</li>
+          <li>Letters with green background are in the right spot</li>
+          <li>Letters with yellow background exist in the word, but are <br> in the wrong spot</li>
+          <li>Letters with gray background do not exist in the word</li>
+          <li>If you need a hint, click the &#63; icon</li>
+      </ul></div>
+    </div>
+
+    <div class="AppFooter" >
+      <div id = "footer">
+        <p>
+        © Isha Haider 2023
+        </p></div>
+      <div class="message" id="message-hint" style="display:none;"></div>
+      <div class="message" id="message-win" style="display:none;"></div>
+      <div class="message" id="message-lose" style="display:none; color:white;"></div>
+    </div>
+      
+  </body>
+
+</html>

@@ -1,0 +1,177 @@
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+table {
+  width: 20%;
+  margin-right: 0px;
+  margin-left: auto;
+}
+
+.AppHeader {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;  
+  padding: 16px;
+  
+  height: 65px;
+  border-top: 5px solid #8A9A5B;
+  border-bottom: 1px solid #d3d6da;
+
+  font-size: 36px;
+  font-weight: bold;
+  width: 100%;
+}
+
+#title {
+  margin-left: auto;
+  justify-content: center;
+  
+  flex: 1;
+}
+.side:hover{
+  background-color: #D3D3D3;
+}
+.side{
+  background: none;
+  border: none;
+  cursor: pointer;
+
+  font-size: 30px;
+  float: right;
+  height: 95px;
+  width: 80px;
+  justify-content:right; 
+  align-items:center;
+
+  padding-left: 25px;
+  padding-right: 25px;
+
+}
+
+.section{
+  position:relative;
+  display:flex;
+  flex-flow: row nowrap;
+  height: 100%;
+}
+.section:before {
+  content: "";
+  border: 0.75px solid #d3d6da;
+  align-self: stretch;
+  height:545px;}
+
+.gridSection{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width:100%;
+  height:100%;
+  order: -1;
+}
+
+#restart {
+  background-color: green;
+  border-radius: 10px;
+  align-items: center;
+  padding: 15px 30px;
+  color: white;
+}
+
+.instructSection{
+  width:50%;
+  height:100%;
+}
+#instructions-message{
+  margin-top: 20px;
+  text-align: left;
+}
+
+#grid {
+  justify-content: center;
+  width:300px;
+  height:300px;
+
+  margin: 0 auto;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row ;
+  flex-wrap: wrap;
+  align-items: center;
+}
+#congrats{
+  justify-content: center;
+  height:350px;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.tile {
+  /* Box */
+  border: 2px solid lightgrey;
+  width: 60px;
+  height: 60px;
+  margin: 3px;
+
+  /* Text */
+  color: black;
+  font-size: 36px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  align-items: center; /* Centers vertically */
+}
+
+.correct {
+  background-color: #6AAA64;
+  color: white;
+  border-color: white;
+}
+
+.present {
+  background-color: #C9B458;
+  color: white;
+  border-color: white;
+}
+
+.absent {
+  background-color: #787C7E;
+  color: white;
+  border-color: white;
+}
+
+.message{
+  color: black;
+  bottom: 3.25em;
+  padding-top: 21px;
+  padding-bottom: 21px;
+  text-align: center;
+  vertical-align: middle;
+  font-size: small;
+  position: absolute ;
+  width: 100%;
+  background-color: none;
+}
+
+/* footer styling */
+#footer {
+  border-top: 1px solid #bebebe;
+  text-align: center;
+  font-size: small;
+  position: absolute ;
+  bottom: 0;
+  width: 100%;
+}
+
+li:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+h1 {
+  text-align: center;
+}
